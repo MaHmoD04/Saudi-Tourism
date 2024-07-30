@@ -224,6 +224,9 @@ header {
       @media (min-width: 992px) {
         text-align: center;
       }
+      @media (max-width: 991px) {
+        width: 100%;
+      }
     }
   }
   .info-header {

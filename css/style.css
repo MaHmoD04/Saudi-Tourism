@@ -261,6 +261,11 @@ header .title-header p {
     text-align: center;
   }
 }
+@media (max-width: 991px) {
+  header .title-header p {
+    width: 100%;
+  }
+}
 header .info-header div {
   color: #fff;
   width: 334px;
