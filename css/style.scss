@@ -1,7 +1,7 @@
-@use "../css/sass/layouts/global";
+@use "../css/sass/pages/destination";
 @use "../css/sass/layouts/color" as *;
 @use "../css/sass/layouts/variables" as *;
-
+@use "../css/sass/layouts/global";
 /*start fotns*/
 @font-face {
   font-family: "Poppins-ExtraLight";
@@ -57,12 +57,28 @@ body {
   }
 }
 /*title section*/
+
+/* char style*/
+.char {
+  transition: trasform 0.5s;
+  transform: translateY(145px);
+  -webkit-transform: translateY(1415px);
+  -moz-transform: translateY(1415px);
+  -ms-transform: translateY(1415px);
+  -o-transform: translateY(1415px);
+  -webkit-transition: trasform 0.5s;
+  -moz-transition: trasform 0.5s;
+  -ms-transition: trasform 0.5s;
+  -o-transition: trasform 0.5s;
+}
+/* char style*/
+
 /*start header*/
 header {
   position: relative;
   z-index: 11;
   width: 100%;
-  height: 100%;
+  height: 944px;
   background-size: cover !important;
   padding: 70px 0;
   nav {
@@ -205,10 +221,12 @@ header {
     }
   }
   .title-header {
+    overflow: hidden;
     margin-bottom: 100px;
     color: $main-color-text;
     h1 {
-      width: 533px;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      width: 593px;
       font : {
         family: "Poppins-Bold";
         size: 80px;
@@ -217,6 +235,13 @@ header {
         font-size: 45px;
         width: 100%;
       }
+//       &#reveal {
+//         transform: translateY(-100%);
+//         -webkit-transform: translateY(-100%);
+//         -moz-transform: translateY(-100%);
+//         -ms-transform: translateY(-100%);
+//         -o-transform: translateY(-100%);
+// }
     }
     p {
       font-size: 20px;
