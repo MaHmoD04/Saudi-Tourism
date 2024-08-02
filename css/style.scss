@@ -586,6 +586,9 @@ footer {
         a {
           color: $main-color-text;
           font-size: 25px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
