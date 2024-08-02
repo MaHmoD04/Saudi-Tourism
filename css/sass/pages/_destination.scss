@@ -1,0 +1,128 @@
+@use "../layouts/color" as *;
+
+/* start travel section*/
+.travel {
+  background-color: $black-color;
+  padding: 70px 0;
+  color: $main-color-text;
+  .title-section {
+    h2 {
+      font : {
+        family: "Poppins-SemiBold";
+        size: 45px;
+      }
+    }
+  }
+  .box {
+    height: 531px;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    .content-box {
+      width: 100%;
+      height: 100%;
+      button {
+        width: 100%;
+        padding: 20px 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        color: $main-color-text;
+        font: {
+          family: "Poppins-Medium";
+          size: 28px;
+        }
+        svg {
+          padding: 10px 11.9px;
+          border: 3px solid $main-color-text;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+        @media (max-width: 767px) {
+          padding: 10px 5px;
+          font-size: 23px;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      padding: 30px 10px;
+    }
+  }
+}
+/* end travel section*/
+
+/* start whatsapp section*/
+.whatsapp {
+  padding: 70px 0;
+  background-color: $black-color;
+  .main-box {
+    color: $main-color-text;
+    border-radius: 127px;
+    padding: 100px 40px;
+    background: linear-gradient(
+      to bottom,
+      #047f01 0%,
+      #ffffff 5%,
+      #047f00 10%,
+      #047f01 93%,
+      #ffffff 100%
+    );
+    -webkit-border-radius: 127px;
+    -moz-border-radius: 127px;
+    -ms-border-radius: 127px;
+    -o-border-radius: 127px;
+    h2 {
+      font : {
+        family: "Poppins-SemiBold";
+        size: 36px;
+      }
+    }
+    button {
+      font-size: 20px;
+      padding: 15px 35px;
+      background-color: $main-color-text;
+      color: #047f00;
+    }
+    @media (max-width: 1199px) {
+      padding: 65px 30px;
+      h2 {
+        font-size: 25px;
+      }
+      button {
+        padding: 9px 25px;
+      }
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      padding: 35px 15px;
+      h2 {
+        font-size: 20px;
+      }
+      button {
+        width: 50%;
+        padding: 7px 15px;
+        font-size: 17px;
+      }
+    }
+  }
+}
+/* end whatsapp section*/
+
+/* start explore section*/
+.explore {
+  .info-explore {
+    h3 {
+      width: 518px !important;
+      @media (max-width: 600px) {
+        width: 100% !important;
+        font-size: 33px !important;
+      }
+    }
+  }
+}
+/* end explore section*/

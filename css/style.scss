@@ -1,7 +1,8 @@
-@use "../css/sass/pages/destination";
+@use "../css/sass/layouts/global";
 @use "../css/sass/layouts/color" as *;
 @use "../css/sass/layouts/variables" as *;
-@use "../css/sass/layouts/global";
+@use "../css/sass/pages/destination";
+@use "../css/sass/pages/aboutUs";
 /*start fotns*/
 @font-face {
   font-family: "Poppins-ExtraLight";
@@ -168,11 +169,11 @@ header {
         }
       }
       @media (max-width: 991px) {
-        transform: translateY(-308px);
-        -webkit-transform: translateY(-308px);
-        -moz-transform: translateY(-308px);
-        -ms-transform: translateY(-308px);
-        -o-transform: translateY(-308px);
+        transform: translateY(-375px);
+        -webkit-transform: translateY(-375px);
+        -moz-transform: translateY(-375px);
+        -ms-transform: translateY(-375px);
+        -o-transform: translateY(-375px);
         padding-bottom: 20px;
         gap: 35px;
         padding: 25px 10px;
@@ -180,11 +181,12 @@ header {
         justify-content: flex-start;
         align-items: flex-start;
         position: absolute;
+        z-index: 111;
         top: 0;
         left: 0;
         background-color: rgb(0, 0, 0, 0.4);
         backdrop-filter: blur(10px);
-        border-right: 5px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0px 21px -7px inset #fff;
         width: 100%;
         margin-left: auto;
       }
@@ -235,13 +237,6 @@ header {
         font-size: 45px;
         width: 100%;
       }
-//       &#reveal {
-//         transform: translateY(-100%);
-//         -webkit-transform: translateY(-100%);
-//         -moz-transform: translateY(-100%);
-//         -ms-transform: translateY(-100%);
-//         -o-transform: translateY(-100%);
-// }
     }
     p {
       font-size: 20px;
